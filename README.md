@@ -1,7 +1,5 @@
 # LFRAG: Layout-oriented Fine-grained Retrieval-Augmented Generation on Multimodal Document Understanding
 
-This repository contains two JSONL datasets under `datasets/` and one LoRA adapter under `lfrag/`.
-
 ## Repository Layout
 
 ```text
