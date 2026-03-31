@@ -1,11 +1,20 @@
 # LFRAG: Layout-oriented Fine-grained Retrieval-Augmented Generation on Multimodal Document Understanding
 
+The LFDocQA dataset and LFRAG model files are open-sourced in this repository.
+
+Training and evaluation scripts will be open-sourced in a future release.
+
 ## Repository Layout
 
 ```text
 datasets/
   docmatix.jsonl
   PaperTab.jsonl
+  docmatix/
+    *.jpg
+  papertab/
+    <paper_id>/
+      page_*.png
 lfrag/
   adapter_config.json
   adapter_model.safetensors
@@ -112,4 +121,3 @@ base_model = AutoModel.from_pretrained(
 model = PeftModel.from_pretrained(base_model, adapter_path)
 model.eval()
 ```
-
