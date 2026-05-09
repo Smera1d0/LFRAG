@@ -1,0 +1,2 @@
+from .visual_retriever_collator_colpail import VisualRetrieverCollator
+from .visual_retriever_collator import VisualRetrieverCollator   

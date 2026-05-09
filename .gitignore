@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Models & Checkpoints (keep dirs, ignore contents)
+models/*
+!models/.gitkeep
+ckpts/*
+!ckpts/.gitkeep
+
+# Index files
+*.pt
+!scripts/*.pt
+
+# Datasets (images, keep annotation jsonl)
+datasets/train/BBox_DocVQA/
+datasets/train/docmatix/
+datasets/train/docvqa/
+datasets/train/dude/
+datasets/train/infographicsvqa/
+datasets/eval/LF_Docmatix/
+datasets/eval/LF_PaperTab/
+
+# Outputs
+outputs/
+results/
+vis_output/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+*.log
+wandb/
+
+# Misc
+*.swp
+*.swo
+*~
