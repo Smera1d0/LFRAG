@@ -169,7 +169,7 @@ The inference script uses a two-step workflow: **build index** (pre-compute pass
 
 **Build Index** (run once per corpus):
 ```bash
-PYTHONPATH=. python scripts/inference.py build-index \
+python scripts/inference.py build-index \
   --jsonl_path ./your-corpus.jsonl \
   --image_dir /your-corpus-dir \
   --index_path ./indexes/index.pt
@@ -177,7 +177,7 @@ PYTHONPATH=. python scripts/inference.py build-index \
 
 **Query** (fast, only encodes the query):
 ```bash
-PYTHONPATH=. python scripts/inference.py query \
+python scripts/inference.py query \
   --query "user query" \
   --index_path ./indexes/index.pt \
   --topk 3
@@ -253,7 +253,7 @@ This evaluates each retriever at both **page-level** and **bbox-level**, outputt
 
 To evaluate a single retriever:
 ```bash
-PYTHONPATH=. python scripts/eval.py \
+python scripts/eval.py \
   --retriever lfrag_retriever \
   --model_path ./ckpts/lfrag \
   --jsonl_path ./datasets/eval/LF_Docmatix.jsonl \
@@ -275,7 +275,7 @@ bash gen.sh
 
 Or run a single generation evaluation:
 ```bash
-PYTHONPATH=. python scripts/generate.py \
+python scripts/generate.py \
   --results_path ./results/LF_Docmatix/lfrag/retrieval_results_bbox.jsonl \
   --image_dir ./datasets/eval/LF_Docmatix \
   --output_path ./results/LF_Docmatix/lfrag/topk_3_bbox.jsonl \
@@ -288,7 +288,7 @@ PYTHONPATH=. python scripts/generate.py \
 
 To re-score existing generation results with a different judge model:
 ```bash
-PYTHONPATH=. python scripts/llm_judge.py \
+python scripts/llm_judge.py \
   --results_dir ./results \
   --datasets LF_Docmatix LF_PaperTab \
   --port 8004
