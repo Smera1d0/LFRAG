@@ -16,14 +16,12 @@ ckpts/*
 *.pt
 !scripts/*.pt
 
-# Datasets (images, keep annotation jsonl)
+# Datasets (training images only, eval images are tracked)
 datasets/train/BBox_DocVQA/
 datasets/train/docmatix/
 datasets/train/docvqa/
 datasets/train/dude/
 datasets/train/infographicsvqa/
-datasets/eval/LF_Docmatix/
-datasets/eval/LF_PaperTab/
 
 # Outputs
 outputs/
