@@ -188,7 +188,7 @@ Optional arguments for `query`:
 - `--save_crops_dir ./crops`: Save top-k cropped block images to a directory.
 - `--image_dir /your-corpus-dir`: Required when using `--save_crops_dir`.
 
-Our trained LoRA adapter checkpoint will be released on Hugging Face (coming soon).
+Our trained LoRA adapter checkpoint can be downloaded from [Google Drive](https://drive.google.com/file/d/1gqey-X0qKqdQcxvBV51_g37fpnKpYq1o/view?usp=drive_link). After downloading, extract the zip file and place the contents under `./ckpts/lfrag/`.
 
 **Note:** The `lfrag/` directory is a PEFT LoRA adapter trained on top of the merged ColQwen2.5-v0.2 model.
 
