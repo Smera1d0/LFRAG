@@ -16,7 +16,7 @@ We provide detailed instructions for preparing training and evaluation datasets 
 ### 1. Training Dataset
 The annotation files for training are already provided in `datasets/train/`.
 
-The corresponding document images should be downloaded separately from the provided cloud storage link: XXXXX. After downloading, extract the image archives and place them under `datasets/train/`.
+The corresponding document images should be downloaded separately from [Google Drive](https://drive.google.com/drive/folders/11PJKsE7S8iwAkZzWtkaQhWLmPixhe3yq?usp=drive_link). After downloading, extract the image archives and place them under `datasets/train/`.
 
 The final training dataset structure should be organized as follows:
 ```
